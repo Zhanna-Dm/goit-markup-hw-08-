@@ -1,23 +1,25 @@
 /* Our team */
 
-.team .container {
-    padding: 60px 0px;
+// .team .container {
 
-    @media (min-width:$tablet) {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 
-    @media screen and (min-width: $desktop) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
 
 .team {
     margin-left: auto;
     margin-right: auto;
     background-color: $background-third-color;
+
+    padding: 60px 15px;
+    
+        @media (min-width:$tablet) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 
     & h2 {
         margin-bottom: 30px;
@@ -37,7 +39,7 @@
         border-radius: 0px 0px 4px 4px;
     }
     @media (min-width: $desktop) {
-        & li:not(:last-child) {
+        & >li:not(:last-child) {
             margin-right: 30px;
         }
     }

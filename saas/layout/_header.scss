@@ -115,6 +115,13 @@
     display: none;
 }
 
+.hamburger-menu__blocks {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
 
 
 .navigation__items,
@@ -161,7 +168,7 @@
 
     @media (max-width: $tablet-before) {
         flex-direction: column-reverse;
-        margin-top: 306px;
+        // margin-top: 306px;
         gap: 32px;
     }
 

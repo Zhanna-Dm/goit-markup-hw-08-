@@ -82,13 +82,21 @@ address {
     }
 }
 
+// Social icons
 
-.footer__soclinks {
+.footer__social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    & li {
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+        box-shadow: none;
 
-    & .social-icons {
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -99,53 +107,21 @@ address {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
-
-
-.footer__social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-
-    & li {
-        box-shadow: none;
-    }
-}
-
-.footer__soc-icon {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.social-icons li {
-    box-shadow: none;
-}
-
-.footer .social-item {
-    width: 44px;
-    height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
-    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $link-hover-color;
+    }
 }
 
 .footer .social-icon {
     fill: $main-background-color;
 }
 
-.footer .social-link {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: $link-hover-color;
-    }
-}
+// footer-soclinks title
 
 .footer-blocks__item p {
     margin-bottom: 20px;
