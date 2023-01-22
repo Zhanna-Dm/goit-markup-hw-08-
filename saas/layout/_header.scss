@@ -28,6 +28,12 @@
     }
 }
 
+.navigation__items {
+    @media (max-width: $tablet-before) {
+        height: 70%;
+    }
+}
+
 .nav__hamburger-menu {
     // @media (min-width: $tablet) {
     //     display: none;
@@ -52,7 +58,10 @@
         // // transform: translate(-20%, -50%) scale(1);
         
         &.is-open {
-            display: inline-block;
+            // display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
         }
     }
 
@@ -94,8 +103,7 @@
             // right: 10px;
         }
     }
-    
-    }
+}
 
 
 .icon-cross:hover,
@@ -169,7 +177,7 @@
 /* Nav styles, Contacts */
 
 .contacts--header {
-    margin-left: auto;
+    // margin-left: auto;
     display: flex;
 
     @media (max-width: $tablet-before) {
@@ -334,7 +342,7 @@ a.navigation__item--current {
     @media (max-width: $tablet-before) {}
         display: flex;
         margin-top: 64px;
-        margin-bottom: 48px;
+        // margin-bottom: 48px;
 }
 
 .social-link--hamburger a {
