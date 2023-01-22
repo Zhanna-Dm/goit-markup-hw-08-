@@ -115,18 +115,18 @@
     display: none;
 }
 
-.hamburger-menu__blocks {
-    @media (max-width: $tablet-before) {
-         height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    }
+// .hamburger-menu__blocks {
+//     @media (max-width: $tablet-before) {
+//          height: 100vh;
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-content: space-between;
+//     }
 
-    @media (min-width: $tablet) {
-        display: flex;
-    }
-}
+//     @media (min-width: $tablet) {
+//         display: flex;
+//     }
+// }
 
 
 
