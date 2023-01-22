@@ -116,10 +116,12 @@
 }
 
 .hamburger-menu__blocks {
-    height: 100vh;
+    @media (max-width: $tablet-before) {
+         height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    }
 }
 
 
